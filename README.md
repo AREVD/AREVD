@@ -1,5 +1,5 @@
-# Automatic Segmentation and Optimal Trajectory Calculation for NeuroLens
-This repository contains research artifacts for the automatic segmentation and optimal trajectory calculation section of the **2023 IEEE/ISMAR paper** “Did I Do Well? Assessment of Trainees’ Performance in Augmented Reality-assisted Neurosurgical Training” including instructions for implementation and several examples.
+# Automatic Segmentation and Optimal Trajectory Calculation for AREVD
+This repository contains research artifacts for the automatic segmentation and optimal trajectory calculation section of the **2023 IEEE/ISMAR paper** “Automatic Segmentation and Optimal Trajectory Calculation for External Ventricular Drain” including instructions for implementation and several examples.
 
 # Outline
 1. [Overview](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#overview)
