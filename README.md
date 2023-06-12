@@ -8,17 +8,17 @@ This repository contains research artifacts for the automatic segmentation and o
 4. [Examples](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#examples)
 5. [Citation of Dataset](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#citation-of-dataset)
 
-ADD IN INFO ABOUT OVERVIEW
+The rest of the repository is organized as follows. [Section 1](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#overview) gives a brief overview of the automatic segmentation model for NeuroLens. [Section 2](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#data) describes the data set used for this project. [Section 3](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#implementation) explains the implementation of this algorithm. [Section 4](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#examples) provides a few examples of implementation. [Section 5](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#citation-of-dataset) includes the citation of the dataset used.
 
 # Overview
+
+ADD IMAGE
 
 Figure 1. Overview of Automatic Segmentation for NeuroLens
 
 The integration of Augmented Reality (AR) in neurosurgery provides guidance to surgeons through the visualization of a patient-specific anatomy by enhancing their field of view. Our lab has developed an AR-assisted guidance system for a neurosurgical procedure, the external ventricular drain (EVD), using a marker-based tracking of a phantom model and surgical tool called NeuroLens. EVD is performed in order to alleviate pressure built in the ventricular system of the brain due to excess cerebrospinal fluid (CSF). In this procedure, surgeons drill a small hole in the skull through which they place a catheter that drains the CSF to an external closed system.
 
 In order to make the AR system more clinically feasible, we created an automatic segmentation model in order to segment the ventricles as compared to the previous manual segmentation that took experts more than 40 minutes in the pre-operative stage. Furthermore, the algorithm also calculates the optimal trajectory of insertion of the catheter. The algorithm uses thresholding methods to segment the ventricle and optimal trajectory is calculated by estimating the starting and ending point of EVD as described by medical literature and connecting the two.
-
- 
 
 
 # Data
