@@ -53,7 +53,8 @@ Running the GUI involves filling in a set of parameters.
 	
 	(h) **Z-Index of the Nasion:** the nasion is the point on the bridge of the nose that meets the forehead. This can be found by examining the CT scans in the sagittal view and choosing the corresponding value for the Z-index.
 	
-	ADD IMAGE
+![Saggital view](https://github.com/NeuroLens6/NeuroLens/blob/main/Nasion%20Image%201.png)
+![Z-index](https://github.com/NeuroLens6/NeuroLens/blob/main/Nasion%20Image%202.png)
 
 	(i) **EVD Side:** this parameter determines if you want the EVD to come in from the right side or the left side. Usually, the EVD will come in from the right, unless there are obstructions of some sort in which the EVD will come in from the left.
 
