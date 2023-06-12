@@ -12,9 +12,12 @@ The rest of the repository is organized as follows. [Section 1](https://github.c
 
 # Overview
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/Segmenation%20Framework.png" width=50% height=50%>
-
+<p align="center">
+  <img src="https://github.com/AREVD/AREVD/blob/main/Images/Segmenation%20Framework.png" width=50% height=50%>
+</p>
+<p align="center">
 Figure 1. Overview of Automatic Segmentation
+	</p>
 
 The integration of Augmented Reality (AR) in neurosurgery provides guidance to surgeons through the visualization of a patient-specific anatomy by enhancing their field of view. Our lab has developed an AR-assisted guidance system for a neurosurgical procedure, the external ventricular drain (EVD), using a marker-based tracking of a phantom model and surgical tool called NeuroLens. EVD is performed in order to alleviate pressure built in the ventricular system of the brain due to excess cerebrospinal fluid (CSF). In this procedure, surgeons drill a small hole in the skull through which they place a catheter that drains the CSF to an external closed system.
 
@@ -27,12 +30,12 @@ The data used for this project comes from the **RSNA Intracranial Hemorrhage Det
 
 # Implementation
 
-Rendering the GUI:
+## Rendering the GUI:
 1. Download the code labeled “main.py” and "index.html".
 2. The user interface was created using Flask. Use the terminal to run the app and open the link provided.
 
 
-Running the GUI:
+## Running the GUI:
 Running the GUI involves filling in a set of parameters.
 1. Download and save the Dicom files of the CT scans to your computer.
 2. Examine the CT scans on a medical image viewing software such as Mango viewing software. If there are multiple series, choose the series corresponding to the correct window to examine the ventricles. 
@@ -70,7 +73,7 @@ Running the GUI involves filling in a set of parameters.
 
 
 # Examples
-**Hydrocephalus**
+## Hydrocephalus
 
 <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%203.png" width=30% height=30%>
 
@@ -101,7 +104,7 @@ If these values are inputted, this output should be produced:
 <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%201.png" width=35% height=35%>
 <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%202.png" width=40% height=40%>
 
-**Middle Cerebral Artery (MCA) Stroke on Right**
+## Middle Cerebral Artery (MCA) Stroke on Right
 
 <img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%203.png" width=30% height=30%>
 
@@ -136,7 +139,7 @@ If these values are inputted, this output should be produced:
 
 
 
-**Midline Shift**
+## Midline Shift
 
 <img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%203.png" width=30% height=30%>
 
