@@ -72,7 +72,7 @@ ADD IMAGE
 # Examples
 **Hydrocephalus**
 
-ADD IMAGE
+<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Hydrocephalus%20Image%203.png" width=30% height=30%>
 
 **Dicom Folder Path:** the saved path on your computer
 **Series UID to Select:** None
@@ -94,7 +94,7 @@ If these values are inputted, this output should be produced:
 
 **Middle Cerebral Artery (MCA) Stroke on Right**
 
-ADD IMAGE
+<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/MCA%20Stroke%20Image%203.png" width=30% height=30%>
 
 
 **Dicom Folder Path:** the saved path on your computer
@@ -120,7 +120,7 @@ If these values are inputted, this output should be produced:
 
 **Midline Shift**
 
-ADD IMAGE
+<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%203.png" width=30% height=30%>
 
 
 Dicom Folder Path: the saved path on your computer
