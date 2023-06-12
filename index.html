@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EVD Placement</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css" integrity="sha512-SZgE3m1he0aEF3tIxxnz/3mXu/u/wlMNxQSnE0Cni9j/O8Gs+TjM9tm1NX34nRQ7GiLwUEzwuE3Wv2FLz2667w==" crossorigin="anonymous">
+    <style> .slider-rangeHighlight.category1 {background: #FF9900;} </style>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1> EVD Placement</h1>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <form role="form" method="POST" id='mainform' action="postForm()">
+            <div class="mb-3">
+                <label for="DICOM_FOLDER_PATH">Dicom Folder Path</label>
+                <input type="text" class="form-control" id="DICOM_FOLDER_PATH" name="DICOM_FOLDER_PATH">
+            </div>
+            <div class="mb-3">
+                <label for="SERIES_UID">Series UID</label>
+                <input type="text" class="form-control" id="SERIES_UID" name="SERIES_UID">
+            </div>
+<!--            <div class="mb-3">-->
+<!--                <label for="SEGPATH">Ventricle Segmentation Path</label>-->
+<!--                <input type="text" class="form-control" id="SEGPATH" name="SEGPATH">-->
+<!--            </div>-->
+<!--            <div class="mb-3">-->
+<!--                <label for="SPACING">Slice Thickness</label>-->
+<!--                <select class="form-select" id="SPACING" name="SPACING" aria-label="SPACING">-->
+<!--                    <option value="0.5">0.5</option>-->
+<!--                    <option value="1">1</option>-->
+<!--                    <option value="2">2</option>-->
+<!--                </select>-->
+<!--&lt;!&ndash;                <label for="SPACING">SPACING</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                <input type="text" id="SPACING" name="SPACING">&ndash;&gt;-->
+<!--            </div>-->
+            <div class="mb-3">
+                <label for="LARGEST_REGION_INDEX">Index of Which Largest Region Should Be Considered the Ventricle(s) (0-2)</label>
+                <select class="form-control" id="LARGEST_REGION_INDEX" name="LARGEST_REGION_INDEX" aria-label="LARGEST_REGION_INDEX">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="SENS_VENT">Sensitivity of Ventricle Segmentation</label>
+                <select class="form-control" id="SENS_VENT" name="SENS_VENT" aria-label="SENS_VENT">
+                    <option value="10">Low</option>
+                    <option value="15" selected>High</option>
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="ROT_UP_DOWN">Degrees to rotate Up (+) and Down (-) </label>
+                <input id="ROT_UP_DOWN" class='form-control form-control-range' data-slider-id='ROT_UP_DOWN' name="ROT_UP_DOWN" type="text" data-slider-min="-60" data-slider-max="60" data-slider-step="1" data-slider-value="0" style="width:100%"/>
+            </div>
+            <div class="mb-3">
+                <label for="ROT_LEFT_RIGHT">Degrees to rotate Right (+) and Left (-) </label>
+                <input id="ROT_LEFT_RIGHT" class='form-control form-control-range' data-slider-id='ROT_LEFT_RIGHT' name="ROT_LEFT_RIGHT" type="text" data-slider-min="-60" data-slider-max="60" data-slider-step="1" data-slider-value="0" style="width:100%"/>
+            </div>
+
+            <div class="mb-3">
+                <label for="ERODE_DILATE_ITER">Iterations of Erosions and Dilations </label>
+                <input type="text" class="form-control" id="ERODE_DILATE_ITER" name="ERODE_DILATE_ITER">
+            </div>
+            <div class="mb-3">
+                <label for="MID_PUPILLARY_Z_INDEX">Scan's Z Index of Nasion</label>
+                <input type="text" class="form-control" id="MID_PUPILLARY_Z_INDEX" name="MID_PUPILLARY_Z_INDEX">
+            </div>
+            <div class="mb-3">
+                <label for="RIGHT">EVD Side</label>
+                <select class="form-control" id="RIGHT" name="RIGHT" aria-label="RIGHT">
+                    <option value="True" selected>Right</option>
+                    <option value="False">Left</option>
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="SHIFT_LEFT_RIGHT">Distance (mm) to shift EVD destination Right (+) or Left (-) </label>
+                <input id="SHIFT_LEFT_RIGHT" class='form-control form-control-range' data-slider-id='SHIFT_LEFT_RIGHT' name="SHIFT_LEFT_RIGHT" type="text" data-slider-min="-20" data-slider-max="20" data-slider-step="1" data-slider-value="0" style="width:100%"/>
+            </div>
+
+            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+
+        </form>
+      </div>
+
+
+
+
+      <div class="col-md-8">
+        <div class="btn-group" role="group">
+            <a type="button" href="/download_faces" class="btn btn-secondary">Download Faces</a>
+            <a type="button" href="/download_vertices" class="btn btn-secondary">Download Vertices</a>
+            <a type="button" href="/download_trajectory" class="btn btn-secondary">Download Trajectory</a>
+            <div id="spinner_div"> </div>
+        </div>
+
+
+        <div id='chart' class="chart" style="min-height: 100vh;"> {{graphJSON | safe}} </div>
+
+        {% if diceScore %}
+            <p>The Dice score for the ventricle segmentation was {{diceScore | safe}}</p>
+        {% endif %}
+      </div>
+    </div>
+
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+
+        var slider = new Slider('#ROT_UP_DOWN', { rangeHighlights: [{"start":-1, "end":1, "class": "category1"}]});
+        var slider = new Slider('#ROT_LEFT_RIGHT', { rangeHighlights: [{"start":-1, "end":1,  "class": "category1"}] });
+        var slider = new Slider('#SHIFT_LEFT_RIGHT', { rangeHighlights: [{"start":-0.5, "end":0.5,  "class": "category1"}] });
+
+        const form = document.getElementById("mainform")
+        form.addEventListener('submit', function(event) {
+        console.log('submitting form')
+        document.getElementById('spinner_div').innerHTML = '<div class="spinner-border ml-3" role="status"> <span class="sr-only">Loading...</span> </div>'
+        event.preventDefault();    // prevent page from refreshing
+        const formData = new FormData(form);
+            fetch('/submit_inputs',{
+                method: 'POST',
+                body: formData,
+            }).then(function(response) {
+                    return response.text();
+
+                }).then(function(text) {
+                    document.getElementById('chart').innerHTML = text;
+                    document.getElementById('spinner_div').innerHTML = '';
+                    // console.log('text')
+                    // console.log(text)
+
+                }).then(function(){
+                    eval(document.getElementById('chart_script').innerHTML);
+                });
+        });
+
+        $(function() {
+           $('#facesDown').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/download_faces',
+                function(data){
+            });
+            return false;
+           });
+          });
+
+        $(function() {
+           $('#vertsDown').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/download_vertices',
+                function(data){
+            });
+            return false;
+           });
+          });
+
+          $(function() {
+           $('#trajDown').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/download_trajectory',
+                function(data){
+            });
+            return false;
+           });
+          });
+
+    </script>
+</body>
+</html>
