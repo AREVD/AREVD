@@ -39,7 +39,7 @@ Running the GUI involves filling in a set of parameters.
 
 **Important Note: The right and left side refer to a surgeon's view of the EVD procedure.**
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Ventricles%20Image.png" width=40% height=40%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/Ventricles%20Image.png" width=40% height=40%>
 
 3. Fill out the form using the following parameters:
 
@@ -60,8 +60,8 @@ Running the GUI involves filling in a set of parameters.
 	
 	(h) **Z-Index of the Nasion:** the nasion is the point on the bridge of the nose that meets the forehead. This can be found by examining the CT scans in the sagittal view and choosing the corresponding value for the Z-index. The scans in this dataset may look squished, but using this method to find the nasion will still work. 
 	
-	<img src="https://github.com/AREVD/AREVD/blob/main/Nasion%20Image%201.png" width=40% height=40%>
-	<img src="https://github.com/AREVD/AREVD/blob/main/Nasion%20Image%202.png" width=20% height=20%>
+	<img src="https://github.com/AREVD/AREVD/blob/main/Images/Nasion%20Image%201.png" width=40% height=40%>
+	<img src="https://github.com/AREVD/AREVD/blob/main/Images/Nasion%20Image%202.png" width=20% height=20%>
 
 
 	(i) **EVD Side:** this parameter determines if you want the EVD to come in from the right side or the left side. Usually, the EVD will come in from the right, unless there are obstructions of some sort in which the EVD will come in from the left.
@@ -72,7 +72,7 @@ Running the GUI involves filling in a set of parameters.
 # Examples
 **Hydrocephalus**
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Hydrocephalus%20Image%203.png" width=30% height=30%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%203.png" width=30% height=30%>
 
 **Dicom Folder Path:** the saved path on your computer
 
@@ -98,12 +98,12 @@ Since there is only one series, we choose a series UID of "None". The index of t
 
 If these values are inputted, this output should be produced:
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Hydrocephalus%20Image%201.png" width=35% height=35%>
-<img src="https://github.com/AREVD/AREVD/blob/main/Hydrocephalus%20Image%202.png" width=40% height=40%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%201.png" width=35% height=35%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%202.png" width=40% height=40%>
 
 **Middle Cerebral Artery (MCA) Stroke on Right**
 
-<img src="https://github.com/AREVD/AREVD/blob/main/MCA%20Stroke%20Image%203.png" width=30% height=30%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%203.png" width=30% height=30%>
 
 
 **Dicom Folder Path:** the saved path on your computer
@@ -131,14 +131,14 @@ Since there is only one series, we choose a series UID of "None". The index of t
 
 If these values are inputted, this output should be produced:
 
-<img src="https://github.com/AREVD/AREVD/blob/main/MCA%20Stroke%20Image%201.png" width=30% height=30%>
-<img src="https://github.com/AREVD/AREVD/blob/main/MCA%20Stroke%20Image%202.png" width=40% height=40%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%201.png" width=30% height=30%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%202.png" width=40% height=40%>
 
 
 
 **Midline Shift**
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Midline%20Shift%20Image%203.png" width=30% height=30%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%203.png" width=30% height=30%>
 
 
 **Dicom Folder Path:** the saved path on your computer
@@ -165,8 +165,8 @@ Since there is only one series, we choose a series UID of "None". The index of t
 
 If these values are inputted, this output should be produced:
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Midline%20Shift%20Image%201.png" width=35% height=35%>
-<img src="https://github.com/AREVD/AREVD/blob/main/Midline%20Shift%20Image%202.png" width=35% height=35%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%201.png" width=35% height=35%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%202.png" width=35% height=35%>
 
 
 
