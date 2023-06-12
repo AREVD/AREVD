@@ -37,7 +37,7 @@ Running the GUI involves filling in a set of parameters.
 
 **Important Note: The right and left side refer to a surgeon's view of the EVD procedure.**
 
-ADD IMAGE
+<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Ventricles%20Image.png" width=40% height=40%>
 
 3. Fill out the form using the following parameters:
 
@@ -46,8 +46,6 @@ ADD IMAGE
 	(b) **Series UID to Select:** Some CT scans have multiple series. This is just the ID that indicates what series to choose. If there are not multiple series, just leave it as “None”. Otherwise, select the series corresponding to the correct window to examine the ventricles. 
 
 	(c) **Index of Which Largest Region Should be Considered the Ventricle(s):** if the largest dark region (meaning there is fluid present) present is the ventricle, set it to 0. If the ventricle is the second or third largest fluid-filled region present select 1 or 2, respectively. 
-
-ADD IMAGE
 
 	(d) **Sensitivity of Ventricle Segmentation:** refers to the upper threshold level that users can set. Some scans have bleeds that are lighter than the ventricles, but darker than the surrounding brain area. If this is the case, set the sensitivity to low. Otherwise, set it to high.
 
