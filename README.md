@@ -72,6 +72,8 @@ ADD IMAGE
 # Examples
 **Hydrocephalus**
 
+ADD IMAGE
+
 **Dicom Folder Path:** the saved path on your computer
 **Series UID to Select:** None
 **Index of Which Largest Region Should be Considered the Ventricle(s):** 0
@@ -85,30 +87,42 @@ ADD IMAGE
 
 Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "High" because there are no other regions that are lighter than the ventricles, but darker than the surrounding brain are. The degrees to rotate up and down would be "8" since in the saggital view of the CT scan, the skull dips downward. This positive 8 correction allows the scan to be rotated up to fix the oritentation. The degrees rotated to the right or left is "0" since the CT scan is in the correct orientation in that direction. The iterations of erosions and dilations is found by trial and error to be "5". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "33". Because there are no obstructions on the right side, we choose to start the EVD from the right side as that is the default. Because the ventricles aren't shifted from the midline, the distance (mm) to shift EVD distination right or left will be "0".
 
+If these values are inputted, this output should be produced:
 
 <img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Hydrocephalus%20Image%201.png" width=35% height=35%>
 <img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Hydrocephalus%20Image%202.png" width=40% height=40%>
 
 **Middle Cerebral Artery (MCA) Stroke on Right**
-Dicom Folder Path: the saved path on your computer
-Series UID to Select: None
-Index of Which Largest Region Should be Considered the Ventricle(s): 0
-Sensitivity of Ventricle Segmentation: Low
-Degrees to rotate Up (+) and Down (-): 40
-Degrees to rotate Right (+) and Left (-): 0
-Iterations of Erosions and Dilations: 2
-Z-Index of the Nasion: 55
-EVD Side: Left
-Distance (mm) to shift EVD destination Right (+) or Left (-): 0
+
+ADD IMAGE
+
+
+**Dicom Folder Path:** the saved path on your computer
+**Series UID to Select:** None
+**Index of Which Largest Region Should be Considered the Ventricle(s):** 0
+**Sensitivity of Ventricle Segmentation:** Low
+**Degrees to rotate Up (+) and Down (-):** 40
+**Degrees to rotate Right (+) and Left (-):** 0
+**Iterations of Erosions and Dilations:** 2
+**Z-Index of the Nasion:** 55
+**EVD Side:** Left
+**Distance (mm) to shift EVD destination Right (+) or Left (-):** 0
+
+Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "Low" because there is another region that is lighter than the ventricles, but darker than the surrounding brain are. This lower value for sensitivity helps distinugish between the darker ventricle and this lighter bleed. The degrees to rotate up and down would be "40" since in the saggital view of the CT scan, the skull dips downward. This positive 40 correction allows the scan to be rotated up to fix the oritentation. The degrees rotated to the right or left is "0" since the CT scan is in the correct orientation in that direction. The iterations of erosions and dilations is found by trial and error to be "2". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "55". Because is the obstruction of the bleed from the right side, we choose to start the EVD from the left side. Because the ventricles aren't shifted from the midline, the distance (mm) to shift EVD distination right or left will be "0".
+
+
+If these values are inputted, this output should be produced:
 
 <img src="https://github.com/NeuroLens6/NeuroLens/blob/main/MCA%20Stroke%20Image%201.png" width=30% height=30%>
 <img src="https://github.com/NeuroLens6/NeuroLens/blob/main/MCA%20Stroke%20Image%202.png" width=40% height=40%>
 
 
 
-
-
 **Midline Shift**
+
+ADD IMAGE
+
+
 Dicom Folder Path: the saved path on your computer
 Series UID to Select: None
 Index of Which Largest Region Should be Considered the Ventricle(s): 0
@@ -120,10 +134,14 @@ Z-Index of the Nasion: 59
 EVD Side: Right
 Distance (mm) to shift EVD destination Right (+) or Left (-): 5
 
+Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "High" because there are no other regions that are lighter than the ventricles, but darker than the surrounding brain are. The degrees to rotate up and down would be "25" since in the saggital view of the CT scan, the skull dips downward. This positive 25 correction allows the scan to be rotated up to fix the oritentation. The degrees rotated to the right or left would be "-8" since in the axial view of the CT scan, the skull is oriented towards the right. This negative 8 correction allows the scan to be rotated towards the left to fix the oritentation. The iterations of erosions and dilations is found by trial and error to be "2". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "59". Because there are no obstructions on the right side, we choose to start the EVD from the right side as that is the default. Since the ventricles are shifted from the midline towards the right, the distance (mm) to shift EVD distination right or left will be "5" which is a shift of 5 mm to the right.
+
+If these values are inputted, this output should be produced:
+
 <img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%201.png" width=35% height=35%>
 <img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%202.png" width=35% height=35%>
 
-Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "High" because there are no other regions that are lighter than the ventricles, but darker than the surrounding brain are. The degrees to rotate up and down would be "25" since in the saggital view of the CT scan, the skull dips downward. This positive 25 correction allows the scan to be rotated up to fix the oritentation. The degrees rotated to the right or left would be "-8" since in the axial view of the CT scan, the skull is oriented towards the right. This negative 8 correction allows the scan to be rotated towards the left to fix the oritentation. The iterations of erosions and dilations is found by trial and error to be "2". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "59". Because there are no obstructions on the right side, we choose to start the EVD from the right side as that is the default. Since the ventricles are shifted from the midline towards the right, the distance (mm) to shift EVD distination right or left will be "5" which is a shift of 5 mm to the right.
+
 
 
 # Citation of Dataset
