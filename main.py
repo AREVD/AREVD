@@ -70,7 +70,7 @@ def submit_inputs():
 
 @app.route('/')
 def make_home():
-    return render_template('index.html', graphJSON='', diceScore='')
+    return render_template('index.html', graphJSON='')
 
 def return_3D_image(DICOM_FOLDER_PATH, SERIES_UID, SPACING, LARGEST_REGION_INDEX, ERODE_DILATE_ITER, SEGPATH,
                     MID_PUPILLARY_Z_INDEX, RIGHT, OFFSET, SENS_VENT,
@@ -189,19 +189,7 @@ def return_3D_image(DICOM_FOLDER_PATH, SERIES_UID, SPACING, LARGEST_REGION_INDEX
     v, f = make_mesh(arr7, 0.5, 1)
     store_faces_vertices(f, v)
 
-    #Calculating the dice score
-    dice_score = ''
-    if SEGPATH:
-        manual_mask, header = nrrd.read(SEGPATH)
-        print("Shape before resampling\t", manual_mask.shape)
-        arr_mask, spacing = resample_nrrd(manual_mask, header, [SPACING, SPACING, SPACING])
-        print("Shape after resampling\t", arr_mask.shape)
 
-        arr_mask2 = np.swapaxes(arr_mask, 0, 2)
-        print('shape:', arr_mask2.shape)
-
-        dice_score = dice(arr7, arr_mask2)
-        print(dice_score)
 
     #Finding 3 edge points on either side of the skull
     edge_points = get_edgepoints(brain_skull_mask[MID_PUPILLARY_Z_INDEX, :, :])
@@ -367,13 +355,11 @@ def return_3D_image(DICOM_FOLDER_PATH, SERIES_UID, SPACING, LARGEST_REGION_INDEX
     graphJSON = json.dumps(fig_ret, cls=plotly.utils.PlotlyJSONEncoder)
     fig_ret = fig_ret.replace("<div>", '<div style="height:100vh">')
     fig_ret = fig_ret.replace('script type="text/javascript"', 'script type="text/javascript" id="chart_script"')
-    if dice_score:
 
-        fig_ret = fig_ret.replace('</div>', '</div> <div> <h2 class="align_center"> Dice Score: %0.3f </h2> </div>' % dice_score, 1)
 
     print('Time Taken: %s seconds' % (time.time() - st_time))
 
-    return fig_ret  # render_template('index.html', graphJSON=fig_ret, diceScore=dice_score)
+    return fig_ret
 
 
 
@@ -633,11 +619,7 @@ def resample_nrrd(image, scan_dict, new_spacing=[1, 1, 1]):
 
     return image, new_spacing
 
-#Formula for calculating the dice score
-def dice(pred, true, k=1):
-    intersection = np.sum(pred[true == k]) * 2.0
-    dice = intersection / (np.sum(pred) + np.sum(true))
-    return dice
+
 
 #Finding 3 edge points on either side of the skull
 def get_edgepoints(sl_):
