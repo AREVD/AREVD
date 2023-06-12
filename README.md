@@ -69,40 +69,40 @@ Running the GUI involves filling in a set of parameters.
 # Examples
 **Hydrocephalus**
 
-Dicom Folder Path: 
+Dicom Folder Path: the saved path on your computer
 Series UID to Select: None
-Index of Which Largest Region Should be Considered the Ventricle(s):
-Sensitivity of Ventricle Segmentation: 
-Degrees to rotate Up (+) and Down (-): 
-Degrees to rotate Right (+) and Left (-):
-Iterations of Erosions and Dilations:
-Z-Index of the Nasion: 
+Index of Which Largest Region Should be Considered the Ventricle(s): 0
+Sensitivity of Ventricle Segmentation: High
+Degrees to rotate Up (+) and Down (-): 0
+Degrees to rotate Right (+) and Left (-): 0
+Iterations of Erosions and Dilations: 5
+Z-Index of the Nasion: 33
 EVD Side: Right
-Distance (mm) to shift EVD destination Right (+) or Left (-):
+Distance (mm) to shift EVD destination Right (+) or Left (-): 0
 
 **Middle Cerebral Artery (MCA) Stroke on Right**
-Dicom Folder Path: 
+Dicom Folder Path: the saved path on your computer
 Series UID to Select: None
-Index of Which Largest Region Should be Considered the Ventricle(s):
-Sensitivity of Ventricle Segmentation: 
-Degrees to rotate Up (+) and Down (-): 
-Degrees to rotate Right (+) and Left (-):
-Iterations of Erosions and Dilations:
-Z-Index of the Nasion: 
-EVD Side: Right
-Distance (mm) to shift EVD destination Right (+) or Left (-):
+Index of Which Largest Region Should be Considered the Ventricle(s): 0
+Sensitivity of Ventricle Segmentation: Low
+Degrees to rotate Up (+) and Down (-): 40
+Degrees to rotate Right (+) and Left (-): 0
+Iterations of Erosions and Dilations: 2
+Z-Index of the Nasion: 55
+EVD Side: Left
+Distance (mm) to shift EVD destination Right (+) or Left (-): 0
 
 **Midline Shift**
-Dicom Folder Path: 
+Dicom Folder Path: the saved path on your computer
 Series UID to Select: None
-Index of Which Largest Region Should be Considered the Ventricle(s):
-Sensitivity of Ventricle Segmentation: 
-Degrees to rotate Up (+) and Down (-): 
-Degrees to rotate Right (+) and Left (-):
-Iterations of Erosions and Dilations:
-Z-Index of the Nasion: 
+Index of Which Largest Region Should be Considered the Ventricle(s): 0
+Sensitivity of Ventricle Segmentation: High
+Degrees to rotate Up (+) and Down (-): 25
+Degrees to rotate Right (+) and Left (-): -8
+Iterations of Erosions and Dilations: 2
+Z-Index of the Nasion: 59
 EVD Side: Right
-Distance (mm) to shift EVD destination Right (+) or Left (-):
+Distance (mm) to shift EVD destination Right (+) or Left (-): 5
 
 
 
