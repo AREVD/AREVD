@@ -5,7 +5,7 @@ This repository contains research artifacts for the automatic segmentation and o
 1. [Overview](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#overview)
 2. [Data](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#data)
 3. [Implementation](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#implementation)
-4. [Examples](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#data)
+4. [Examples](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#examples)
 5. [Citation of Dataset](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#citation-of-dataset)
 
 # Overview
