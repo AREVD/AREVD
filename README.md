@@ -33,7 +33,12 @@ Rendering the GUI:
 Running the GUI:
 Running the GUI involves filling in a set of parameters.
 1. Download and save the Dicom files of the CT scans to your computer.
-2. Examine the CT scans on a medical image viewing software such as Mango viewing software. If there are multiple series, choose the series corresponding to the correct window to examine the ventricles. **Important Note: Some viewers such as Mango viewer will flip the orientation of the CT scan. It is easier to put in a few valeus into the user interface first to produce an initial result to work from.**
+2. Examine the CT scans on a medical image viewing software such as Mango viewing software. If there are multiple series, choose the series corresponding to the correct window to examine the ventricles. 
+
+**Important Note: The right and left side refer to a surgeon's view of the EVD procedure.**
+
+ADD IMAGE
+
 3. Fill out the form using the following parameters:
 
 	(a) **Dicom Folder Path:** This is the location of the CT scans on the computer. Insert the path based on where it has been saved on your computer.
@@ -61,7 +66,7 @@ ADD IMAGE
 
 	(i) **EVD Side:** this parameter determines if you want the EVD to come in from the right side or the left side. Usually, the EVD will come in from the right, unless there are obstructions of some sort in which the EVD will come in from the left.
 
-	(j) **Distance (mm) to shift EVD destination Right (+) or Left (-):** Sometimes, people’s ventricles are shifted either to the left or the right. In this case, we have a parameter that allows the users to shift the final end point to the left or right by a certain number of millimeters. 
+	(j) **Distance (mm) to shift EVD destination Right (+) or Left (-):** Sometimes, people’s ventricles are shifted either to the left or the right. In this case, we have a parameter that allows the users to shift the final end point to the left or right by a certain number of millimeters. If the ventricles are shifted too much to the right, we would also have to shift the final EVD end point to the right to make sure the catheter is targetting the correct place in the ventricle.
 
 
 # Examples
@@ -118,7 +123,7 @@ Distance (mm) to shift EVD destination Right (+) or Left (-): 5
 <img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%201.png" width=35% height=35%>
 <img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%202.png" width=35% height=35%>
 
-Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "High" because there are no other regions that are lighter than the ventricles, but darker than the surrounding brain are. The degrees to rotate up and down would be "25" since in the saggital view of the CT scan, the skull dips downward. This positive 25 correction allows the scan to be rotated up to fix the oritentation. The degrees rotated to the right or left would be "25" since in the axial view of the CT scan, the skull is oriented towards the left. This negative 8 correction allows the scan to be rotated towards the right to fix the oritentation. The iterations of erosions and dilations is found by trial and error to be "2". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "59". Because there are no obstructions on the right side, we choose to start the EVD from the right side as that is the default. Since the ventricles are shifted from the midline towards the left, the distance (mm) to shift EVD distination right or left will be "5".
+Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "High" because there are no other regions that are lighter than the ventricles, but darker than the surrounding brain are. The degrees to rotate up and down would be "25" since in the saggital view of the CT scan, the skull dips downward. This positive 25 correction allows the scan to be rotated up to fix the oritentation. The degrees rotated to the right or left would be "-8" since in the axial view of the CT scan, the skull is oriented towards the right. This negative 8 correction allows the scan to be rotated towards the left to fix the oritentation. The iterations of erosions and dilations is found by trial and error to be "2". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "59". Because there are no obstructions on the right side, we choose to start the EVD from the right side as that is the default. Since the ventricles are shifted from the midline towards the right, the distance (mm) to shift EVD distination right or left will be "5" which is a shift of 5 mm to the right.
 
 
 # Citation of Dataset
