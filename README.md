@@ -86,7 +86,9 @@ Figure 3.
 # Examples
 ## Hydrocephalus
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%203.png" width=30% height=30%>
+<p align="center">
+  <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%203.png" width=30% height=30%>
+</p>
 
 <p align="center">
 Figure 4. 
@@ -116,17 +118,20 @@ Figure 4.
 Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "High" because there are no other regions that are lighter than the ventricles, but darker than the surrounding brain are. The degrees to rotate up and down would be "8" since in the saggital view of the CT scan, the skull dips downward. This positive 8 correction allows the scan to be rotated up to fix the oritentation. The degrees rotated to the right or left is "0" since the CT scan is in the correct orientation in that direction. The iterations of erosions and dilations is found by trial and error to be "5". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "33". Because there are no obstructions on the right side, we choose to start the EVD from the right side as that is the default. Because the ventricles aren't shifted from the midline, the distance (mm) to shift EVD distination right or left will be "0".
 
 If these values are inputted, this output should be produced:
-
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%201.png" width=35% height=35%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%202.png" width=40% height=40%>
+	
+<p align="center">
+  <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%201.png" width=30% height=30%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%202.png" width=35% height=35%>
+</p>
 
 <p align="center">
 Figure 5. 
 	</p>
 
-
 ## Middle Cerebral Artery (MCA) Stroke on Right
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%203.png" width=30% height=30%>
+<p align="center">
+	<img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%203.png" width=30% height=30%>
+</p>
 
 <p align="center">
 Figure 6. 
@@ -158,7 +163,9 @@ Since there is only one series, we choose a series UID of "None". The index of t
 
 If these values are inputted, this output should be produced:
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/Final%20MCA%20Stroke%20Image%201.png" width=30% height=30%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%202.png" width=40% height=40%>
+<p align="center">
+	<img src="https://github.com/AREVD/AREVD/blob/main/Images/Final%20MCA%20Stroke%20Image%201.png" width=30% height=30> <img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%202.png" width=40% height=40%>
+</p>
 
 <p align="center">
 Figure 7. 
@@ -167,7 +174,9 @@ Figure 7.
 
 ## Midline Shift
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%203.png" width=30% height=30%>
+<p align="center">
+	<img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%203.png" width=30% height=30%>
+</p>
 
 <p align="center">
 Figure 8. 
@@ -198,7 +207,9 @@ Since there is only one series, we choose a series UID of "None". The index of t
 
 If these values are inputted, this output should be produced:
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%201.png" width=35% height=35%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%202.png" width=35% height=35%>
+<p align="center">
+	<img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%201.png" width=25% height=25%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%202.png" width=35% height=35%>
+</p>
 
 <p align="center">
 Figure 9. 
