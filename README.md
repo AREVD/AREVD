@@ -12,7 +12,7 @@ The rest of the repository is organized as follows. [Section 1](https://github.c
 
 # Overview
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Segmenation%20Framework.png" width=50% height=50%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/Segmenation%20Framework.png" width=50% height=50%>
 
 Figure 1. Overview of Automatic Segmentation
 
