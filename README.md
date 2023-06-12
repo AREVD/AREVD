@@ -52,9 +52,10 @@ Running the GUI involves filling in a set of parameters.
 	
 	
 	(h) **Z-Index of the Nasion:** the nasion is the point on the bridge of the nose that meets the forehead. This can be found by examining the CT scans in the sagittal view and choosing the corresponding value for the Z-index.
-	
-![Saggital view](https://github.com/NeuroLens6/NeuroLens/blob/main/Nasion%20Image%201.png)
-![Z-index](https://github.com/NeuroLens6/NeuroLens/blob/main/Nasion%20Image%202.png)
+
+
+<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Nasion%20Image%201.png" width=50% height=50%>
+<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Nasion%20Image%202.png" width=50% height=50%>
 
 	(i) **EVD Side:** this parameter determines if you want the EVD to come in from the right side or the left side. Usually, the EVD will come in from the right, unless there are obstructions of some sort in which the EVD will come in from the left.
 
@@ -90,8 +91,9 @@ Z-Index of the Nasion: 55
 EVD Side: Left
 Distance (mm) to shift EVD destination Right (+) or Left (-): 0
 
-![Top view of MCA stroke](https://github.com/NeuroLens6/NeuroLens/blob/main/MCA%20Stroke%20Image%201.png) 
-![Side view of MCA stroke](https://github.com/NeuroLens6/NeuroLens/blob/main/MCA%20Stroke%20Image%202.png)
+<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/MCA%20Stroke%20Image%201.png" width=50% height=50%>
+<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/MCA%20Stroke%20Image%202.png" width=50% height=50%>
+
 
 **Midline Shift**
 Dicom Folder Path: the saved path on your computer
@@ -105,8 +107,8 @@ Z-Index of the Nasion: 59
 EVD Side: Right
 Distance (mm) to shift EVD destination Right (+) or Left (-): 5
 
-![Top view of midline shift](https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%201.png)
-![Side view of midline shift](https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%202.png)
+<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%201.png" width=50% height=50%>
+<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%202.png" width=50% height=50%>
 
 # Citation of Dataset
 	@misc{rsna-intracranial-hemorrhage-detection,
