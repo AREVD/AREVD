@@ -74,6 +74,9 @@ Z-Index of the Nasion: 33
 EVD Side: Right
 Distance (mm) to shift EVD destination Right (+) or Left (-): 0
 
+![Top view of hydrocephalus](https://github.com/NeuroLens6/NeuroLens/blob/main/Hydrocephalus%20Image%201.png)
+![Side view of hydrocephalus](https://github.com/NeuroLens6/NeuroLens/blob/main/Hydrocephalus%20Image%202.png)
+
 **Middle Cerebral Artery (MCA) Stroke on Right**
 Dicom Folder Path: the saved path on your computer
 Series UID to Select: None
@@ -86,6 +89,9 @@ Z-Index of the Nasion: 55
 EVD Side: Left
 Distance (mm) to shift EVD destination Right (+) or Left (-): 0
 
+![Top view of MCA stroke](https://github.com/NeuroLens6/NeuroLens/blob/main/MCA%20Stroke%20Image%201.png) 
+![Side view of MCA stroke](https://github.com/NeuroLens6/NeuroLens/blob/main/MCA%20Stroke%20Image%202.png)
+
 **Midline Shift**
 Dicom Folder Path: the saved path on your computer
 Series UID to Select: None
@@ -97,6 +103,9 @@ Iterations of Erosions and Dilations: 2
 Z-Index of the Nasion: 59
 EVD Side: Right
 Distance (mm) to shift EVD destination Right (+) or Left (-): 5
+
+![Top view of midline shift](https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%201.png)
+![Side view of midline shift](https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%202.png)
 
 # Citation of Dataset
 	@misc{rsna-intracranial-hemorrhage-detection,
