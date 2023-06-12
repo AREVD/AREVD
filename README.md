@@ -8,6 +8,8 @@ This repository contains research artifacts for the automatic segmentation and o
 4. [Examples](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#examples)
 5. [Citation of Dataset](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#citation-of-dataset)
 
+ADD IN INFO ABOUT OVERVIEW
+
 # Overview
 
 Figure 1. Overview of Automatic Segmentation for NeuroLens
@@ -41,6 +43,8 @@ Running the GUI involves filling in a set of parameters.
 	(c) **Index of Which Largest Region Should be Considered the Ventricle(s):** if the largest dark region (meaning there is fluid present) present is the ventricle, set it to 0. If the ventricle is the second or third largest fluid-filled region present select 1 or 2, respectively. 
 
 	(d) **Sensitivity of Ventricle Segmentation:** refers to the upper threshold level that users can set. Some scans have bleeds that are lighter than the ventricles, but darker than the surrounding brain area. If this is the case, set the sensitivity to low. Otherwise, set it to high.
+	
+	ADD IMAGE
 
 	(e) **Degrees to rotate Up (+) and Down (-):** taking a look at the CT scan images, if they are rotated either too much up or down, this parameter can be used to correct the orientation. Taking a look at this example below, it is rotated too ____, and it can be corrected by rotating ______.
 
@@ -50,9 +54,8 @@ Running the GUI involves filling in a set of parameters.
 
 	(g) **Iterations of Erosions and Dilations:** these are performed to confirm that the ventricles are isolated. Erosions disconnect any non-ventricle regions from the ventricles. You would perform more erosions to get more refined results that have no other non-ventricle regions connecting to the ventricles. Because the ventricles shrink slightly when erosion is performed, we use dilation to get them back to their normal size. We erode and dilate the same number of times. Too much erosion and dilation could be a problem because you can erode important parts of the ventricles. 
 	
-	ADD IMAGE
 	
-	(h) **Z Index of the Nasion:** the nasion is the point on the bridge of the nose that meets the forehead. This can be found by examining the CT scans in the sagittal view and choosing the corresponding value for the Z-index.
+	(h) **Z-Index of the Nasion:** the nasion is the point on the bridge of the nose that meets the forehead. This can be found by examining the CT scans in the sagittal view and choosing the corresponding value for the Z-index.
 	
 	ADD IMAGE
 
@@ -64,5 +67,50 @@ Running the GUI involves filling in a set of parameters.
 
 
 # Examples
+**Hydrocephalus**
+
+Dicom Folder Path: 
+Series UID to Select: None
+Index of Which Largest Region Should be Considered the Ventricle(s):
+Sensitivity of Ventricle Segmentation: 
+Degrees to rotate Up (+) and Down (-): 
+Degrees to rotate Right (+) and Left (-):
+Iterations of Erosions and Dilations:
+Z-Index of the Nasion: 
+EVD Side: Right
+Distance (mm) to shift EVD destination Right (+) or Left (-):
+
+**Middle Cerebral Artery (MCA) Stroke on Right**
+Dicom Folder Path: 
+Series UID to Select: None
+Index of Which Largest Region Should be Considered the Ventricle(s):
+Sensitivity of Ventricle Segmentation: 
+Degrees to rotate Up (+) and Down (-): 
+Degrees to rotate Right (+) and Left (-):
+Iterations of Erosions and Dilations:
+Z-Index of the Nasion: 
+EVD Side: Right
+Distance (mm) to shift EVD destination Right (+) or Left (-):
+
+**Midline Shift**
+Dicom Folder Path: 
+Series UID to Select: None
+Index of Which Largest Region Should be Considered the Ventricle(s):
+Sensitivity of Ventricle Segmentation: 
+Degrees to rotate Up (+) and Down (-): 
+Degrees to rotate Right (+) and Left (-):
+Iterations of Erosions and Dilations:
+Z-Index of the Nasion: 
+EVD Side: Right
+Distance (mm) to shift EVD destination Right (+) or Left (-):
+
+
 
 # Citation of Dataset
+	@misc{rsna-intracranial-hemorrhage-detection,
+   	  author = {Anouk Stein, MD, Carol Wu, Chris Carr, George Shih, Jayashree Kalpathy-Cramer, Julia Elliott, kalpathy, Luciano 		Prevedello, Marc Kohli, MD, Matt Lungren, Phil Culliton, Robyn Ball, Safwan Halabi MD},
+          title = {RSNA Intracranial Hemorrhage Detection},
+          publisher = {Kaggle},
+          year = {2019},
+          url = {https://kaggle.com/competitions/rsna-intracranial-hemorrhage-detection}
+          }
