@@ -12,7 +12,7 @@ The rest of the repository is organized as follows. [Section 1](https://github.c
 
 # Overview
 
-ADD IMAGE
+<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Segmenation%20Framework.png" width=50% height=50%>
 
 Figure 1. Overview of Automatic Segmentation for NeuroLens
 
