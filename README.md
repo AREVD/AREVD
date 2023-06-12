@@ -28,7 +28,7 @@ The data used for this project comes from the **RSNA Intracranial Hemorrhage Det
 # Implementation
 
 Rendering the GUI:
-1. Download the code labeled “final combined segmentation.py”.
+1. Download the code labeled “main.py” and "index.html".
 2. The user interface was created using Flask. Use the terminal to run the app and open the link provided.
 
 
