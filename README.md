@@ -2,11 +2,11 @@
 This repository contains research artifacts for the automatic segmentation and optimal trajectory calculation section of the **2023 IEEE/ISMAR paper** “Did I Do Well? Assessment of Trainees’ Performance in Augmented Reality-assisted Neurosurgical Training” including instructions for implementation and several examples.
 
 # Outline
-1. Overview
-2. Data
-3. Implementation
-4. Examples
-5. Citation of Dataset
+1. [Overview](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#overview)
+2. [Data](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#data)
+3. [Implementation]([url](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#implementation)
+4. [Examples](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#data)
+5. [Citation of Dataset](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#citation-of-dataset)
 
 # Overview
 
