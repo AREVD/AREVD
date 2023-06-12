@@ -57,7 +57,7 @@ Running the GUI involves filling in a set of parameters.
 
 	(i) **EVD Side:** this parameter determines if you want the EVD to come in from the right side or the left side. Usually, the EVD will come in from the right, unless there are obstructions of some sort in which the EVD will come in from the left.
 
-	(j) **Distance (mm) to shift EVD destination Right (+) or Left (-):** Sometimes, people’s ventricles are shifted either to the left or the right. In this case, we have a parameter that allows the users to shift the final end point to the left or right by a certain number of millimeters. For example, in this case ______.
+	(j) **Distance (mm) to shift EVD destination Right (+) or Left (-):** Sometimes, people’s ventricles are shifted either to the left or the right. In this case, we have a parameter that allows the users to shift the final end point to the left or right by a certain number of millimeters.
 
 
 # Examples
