@@ -42,6 +42,8 @@ Running the GUI involves filling in a set of parameters.
 
 	(c) **Index of Which Largest Region Should be Considered the Ventricle(s):** if the largest dark region (meaning there is fluid present) present is the ventricle, set it to 0. If the ventricle is the second or third largest fluid-filled region present select 1 or 2, respectively. 
 
+ADD IMAGE
+
 	(d) **Sensitivity of Ventricle Segmentation:** refers to the upper threshold level that users can set. Some scans have bleeds that are lighter than the ventricles, but darker than the surrounding brain area. If this is the case, set the sensitivity to low. Otherwise, set it to high.
 
 	(e) **Degrees to rotate Up (+) and Down (-):** taking a look at the CT scan images, if they are rotated either too much up or down, this parameter can be used to correct the orientation. 
@@ -51,7 +53,7 @@ Running the GUI involves filling in a set of parameters.
 	(g) **Iterations of Erosions and Dilations:** these are performed to confirm that the ventricles are isolated. Erosions disconnect any non-ventricle regions from the ventricles. You would perform more erosions to get more refined results that have no other non-ventricle regions connecting to the ventricles. Because the ventricles shrink slightly when erosion is performed, we use dilation to get them back to their normal size. We erode and dilate the same number of times. Too much erosion and dilation could be a problem because you can erode important parts of the ventricles. 
 	
 	
-	(h) **Z-Index of the Nasion:** the nasion is the point on the bridge of the nose that meets the forehead. This can be found by examining the CT scans in the sagittal view and choosing the corresponding value for the Z-index.
+	(h) **Z-Index of the Nasion:** the nasion is the point on the bridge of the nose that meets the forehead. This can be found by examining the CT scans in the sagittal view and choosing the corresponding value for the Z-index. The scans in this dataset may look squished, but using this method to find the nasion will still work.
 
 
 <img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Nasion%20Image%201.png" width=40% height=40%>
@@ -65,16 +67,18 @@ Running the GUI involves filling in a set of parameters.
 # Examples
 **Hydrocephalus**
 
-Dicom Folder Path: the saved path on your computer
-Series UID to Select: None
-Index of Which Largest Region Should be Considered the Ventricle(s): 0
-Sensitivity of Ventricle Segmentation: High
-Degrees to rotate Up (+) and Down (-): 0
-Degrees to rotate Right (+) and Left (-): 0
-Iterations of Erosions and Dilations: 5
-Z-Index of the Nasion: 33
-EVD Side: Right
-Distance (mm) to shift EVD destination Right (+) or Left (-): 0
+**Dicom Folder Path:** the saved path on your computer
+**Series UID to Select:** None
+**Index of Which Largest Region Should be Considered the Ventricle(s):** 0
+**Sensitivity of Ventricle Segmentation:** High
+**Degrees to rotate Up (+) and Down (-):** 8
+**Degrees to rotate Right (+) and Left (-):** 0
+**Iterations of Erosions and Dilations:** 5
+**Z-Index of the Nasion:** 33
+**EVD Side:** Right
+**Distance (mm) to shift EVD destination Right (+) or Left (-):** 0
+
+Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "High" because there are no other regions that are lighter than the ventricles, but darker than the surrounding brain are. The degrees to rotate up and down would be "8" since in the saggital view of the CT scan, the skull dips downward. This positive 8 correction allows the scan to be rotated up to fix the oritentation. The degrees rotated to the right or left is "0" since the CT scan is in the correct orientation in that direction. The iterations of erosions and dilations is found by trial and error to be "5". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "33". Because there are no obstructions on the right side, we choose to start the EVD from the right side as that is the default. Because the ventricles aren't shifted from the midline, the distance (mm) to shift EVD distination right or left will be "0".
 
 
 <img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Hydrocephalus%20Image%201.png" width=35% height=35%>
