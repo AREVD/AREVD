@@ -1,5 +1,5 @@
 # Automatic Segmentation and Optimal Trajectory Calculation for External Ventricular Drain
-This repository contains research artifacts for the automatic segmentation and optimal trajectory calculation section of the **IEEE ISMAR 2023** “Did I Do Well? Assessment of Trainees' Performance in Augmented Reality-assisted Neurosurgical Training” including instructions for implementation and several examples.
+This repository contains research artifacts for the paper “Did I Do Well? Assessment of Trainees' Performance in Augmented Reality-assisted Neurosurgical Training”, submitted to **IEEE ISMAR 2023** for review including instructions of the implementation and example datasets.
 
 # Outline
 1. [Overview](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#overview)
@@ -12,9 +12,9 @@ The rest of the repository is organized as follows. [Section 1](https://github.c
 
 # Overview
 
-<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Segmenation%20Framework.png" width=50% height=50%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Segmenation%20Framework.png" width=50% height=50%>
 
-Figure 1. Overview of Automatic Segmentation for NeuroLens
+Figure 1. Overview of Automatic Segmentation
 
 The integration of Augmented Reality (AR) in neurosurgery provides guidance to surgeons through the visualization of a patient-specific anatomy by enhancing their field of view. Our lab has developed an AR-assisted guidance system for a neurosurgical procedure, the external ventricular drain (EVD), using a marker-based tracking of a phantom model and surgical tool called NeuroLens. EVD is performed in order to alleviate pressure built in the ventricular system of the brain due to excess cerebrospinal fluid (CSF). In this procedure, surgeons drill a small hole in the skull through which they place a catheter that drains the CSF to an external closed system.
 
@@ -39,7 +39,7 @@ Running the GUI involves filling in a set of parameters.
 
 **Important Note: The right and left side refer to a surgeon's view of the EVD procedure.**
 
-<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Ventricles%20Image.png" width=40% height=40%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Ventricles%20Image.png" width=40% height=40%>
 
 3. Fill out the form using the following parameters:
 
@@ -60,8 +60,8 @@ Running the GUI involves filling in a set of parameters.
 	
 	(h) **Z-Index of the Nasion:** the nasion is the point on the bridge of the nose that meets the forehead. This can be found by examining the CT scans in the sagittal view and choosing the corresponding value for the Z-index. The scans in this dataset may look squished, but using this method to find the nasion will still work. 
 	
-	<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Nasion%20Image%201.png" width=40% height=40%>
-	<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Nasion%20Image%202.png" width=20% height=20%>
+	<img src="https://github.com/AREVD/AREVD/blob/main/Nasion%20Image%201.png" width=40% height=40%>
+	<img src="https://github.com/AREVD/AREVD/blob/main/Nasion%20Image%202.png" width=20% height=20%>
 
 
 	(i) **EVD Side:** this parameter determines if you want the EVD to come in from the right side or the left side. Usually, the EVD will come in from the right, unless there are obstructions of some sort in which the EVD will come in from the left.
@@ -72,7 +72,7 @@ Running the GUI involves filling in a set of parameters.
 # Examples
 **Hydrocephalus**
 
-<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Hydrocephalus%20Image%203.png" width=30% height=30%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Hydrocephalus%20Image%203.png" width=30% height=30%>
 
 **Dicom Folder Path:** the saved path on your computer
 
@@ -98,12 +98,12 @@ Since there is only one series, we choose a series UID of "None". The index of t
 
 If these values are inputted, this output should be produced:
 
-<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Hydrocephalus%20Image%201.png" width=35% height=35%>
-<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Hydrocephalus%20Image%202.png" width=40% height=40%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Hydrocephalus%20Image%201.png" width=35% height=35%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Hydrocephalus%20Image%202.png" width=40% height=40%>
 
 **Middle Cerebral Artery (MCA) Stroke on Right**
 
-<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/MCA%20Stroke%20Image%203.png" width=30% height=30%>
+<img src="https://github.com/AREVD/AREVD/blob/main/MCA%20Stroke%20Image%203.png" width=30% height=30%>
 
 
 **Dicom Folder Path:** the saved path on your computer
@@ -131,14 +131,14 @@ Since there is only one series, we choose a series UID of "None". The index of t
 
 If these values are inputted, this output should be produced:
 
-<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/MCA%20Stroke%20Image%201.png" width=30% height=30%>
-<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/MCA%20Stroke%20Image%202.png" width=40% height=40%>
+<img src="https://github.com/AREVD/AREVD/blob/main/MCA%20Stroke%20Image%201.png" width=30% height=30%>
+<img src="https://github.com/AREVD/AREVD/blob/main/MCA%20Stroke%20Image%202.png" width=40% height=40%>
 
 
 
 **Midline Shift**
 
-<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%203.png" width=30% height=30%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Midline%20Shift%20Image%203.png" width=30% height=30%>
 
 
 **Dicom Folder Path:** the saved path on your computer
@@ -165,8 +165,8 @@ Since there is only one series, we choose a series UID of "None". The index of t
 
 If these values are inputted, this output should be produced:
 
-<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%201.png" width=35% height=35%>
-<img src="https://github.com/NeuroLens6/NeuroLens/blob/main/Midline%20Shift%20Image%202.png" width=35% height=35%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Midline%20Shift%20Image%201.png" width=35% height=35%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Midline%20Shift%20Image%202.png" width=35% height=35%>
 
 
 
