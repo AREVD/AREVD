@@ -43,14 +43,10 @@ Running the GUI involves filling in a set of parameters.
 	(c) **Index of Which Largest Region Should be Considered the Ventricle(s):** if the largest dark region (meaning there is fluid present) present is the ventricle, set it to 0. If the ventricle is the second or third largest fluid-filled region present select 1 or 2, respectively. 
 
 	(d) **Sensitivity of Ventricle Segmentation:** refers to the upper threshold level that users can set. Some scans have bleeds that are lighter than the ventricles, but darker than the surrounding brain area. If this is the case, set the sensitivity to low. Otherwise, set it to high.
-	
-	ADD IMAGE
 
-	(e) **Degrees to rotate Up (+) and Down (-):** taking a look at the CT scan images, if they are rotated either too much up or down, this parameter can be used to correct the orientation. Taking a look at this example below, it is rotated too ____, and it can be corrected by rotating ______.
+	(e) **Degrees to rotate Up (+) and Down (-):** taking a look at the CT scan images, if they are rotated either too much up or down, this parameter can be used to correct the orientation. 
 
-	(f) **Degrees to rotate Right (+) and Left (-):** taking a look at the CT scan images, if they are rotated either too much to the right or left, this parameter can be used to correct the orientation. Taking a look at this example below, it is rotated too ____, and it can be corrected by rotating ______.
-	
-	ADD IMAGE
+	(f) **Degrees to rotate Right (+) and Left (-):** taking a look at the CT scan images, if they are rotated either too much to the right or left, this parameter can be used to correct the orientation. 
 
 	(g) **Iterations of Erosions and Dilations:** these are performed to confirm that the ventricles are isolated. Erosions disconnect any non-ventricle regions from the ventricles. You would perform more erosions to get more refined results that have no other non-ventricle regions connecting to the ventricles. Because the ventricles shrink slightly when erosion is performed, we use dilation to get them back to their normal size. We erode and dilate the same number of times. Too much erosion and dilation could be a problem because you can erode important parts of the ventricles. 
 	
@@ -62,8 +58,6 @@ Running the GUI involves filling in a set of parameters.
 	(i) **EVD Side:** this parameter determines if you want the EVD to come in from the right side or the left side. Usually, the EVD will come in from the right, unless there are obstructions of some sort in which the EVD will come in from the left.
 
 	(j) **Distance (mm) to shift EVD destination Right (+) or Left (-):** Sometimes, people’s ventricles are shifted either to the left or the right. In this case, we have a parameter that allows the users to shift the final end point to the left or right by a certain number of millimeters. For example, in this case ______.
-
-	ADD IMAGE
 
 
 # Examples
@@ -103,8 +97,6 @@ Iterations of Erosions and Dilations: 2
 Z-Index of the Nasion: 59
 EVD Side: Right
 Distance (mm) to shift EVD destination Right (+) or Left (-): 5
-
-
 
 # Citation of Dataset
 	@misc{rsna-intracranial-hemorrhage-detection,
