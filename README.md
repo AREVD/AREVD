@@ -42,7 +42,14 @@ Running the GUI involves filling in a set of parameters.
 
 **Important Note: The right and left side refer to a surgeon's view of the EVD procedure.**
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/Ventricles%20Image.png" width=40% height=40%>
+<p align="center">
+  <img src="https://github.com/AREVD/AREVD/blob/main/Images/Ventricles%20Image.png" width=40% height=40%>
+</p>
+<p align="center">
+Figure 2. 
+	</p>
+
+
 
 3. Fill out the form using the following parameters:
 
@@ -62,10 +69,14 @@ Running the GUI involves filling in a set of parameters.
 	
 	
 	(h) **Z-Index of the Nasion:** the nasion is the point on the bridge of the nose that meets the forehead. This can be found by examining the CT scans in the sagittal view and choosing the corresponding value for the Z-index. The scans in this dataset may look squished, but using this method to find the nasion will still work. 
-	
-	<img src="https://github.com/AREVD/AREVD/blob/main/Images/Nasion%20Image%201.png" width=40% height=40%>
-	<img src="https://github.com/AREVD/AREVD/blob/main/Images/Nasion%20Image%202.png" width=20% height=20%>
 
+<p align="center">
+	<img src="https://github.com/AREVD/AREVD/blob/main/Images/Nasion%20Image%201.png" width=40% height=40%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/Nasion%20Image%202.png" width=20% height=20%>
+</p>
+
+<p align="center">
+Figure 3. 
+	</p>
 
 	(i) **EVD Side:** this parameter determines if you want the EVD to come in from the right side or the left side. Usually, the EVD will come in from the right, unless there are obstructions of some sort in which the EVD will come in from the left.
 
@@ -76,6 +87,10 @@ Running the GUI involves filling in a set of parameters.
 ## Hydrocephalus
 
 <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%203.png" width=30% height=30%>
+
+<p align="center">
+Figure 4. 
+	</p>
 
 **Dicom Folder Path:** the saved path on your computer
 
@@ -97,16 +112,25 @@ Running the GUI involves filling in a set of parameters.
 
 **Distance (mm) to shift EVD destination Right (+) or Left (-):** 0
 
+
 Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "High" because there are no other regions that are lighter than the ventricles, but darker than the surrounding brain are. The degrees to rotate up and down would be "8" since in the saggital view of the CT scan, the skull dips downward. This positive 8 correction allows the scan to be rotated up to fix the oritentation. The degrees rotated to the right or left is "0" since the CT scan is in the correct orientation in that direction. The iterations of erosions and dilations is found by trial and error to be "5". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "33". Because there are no obstructions on the right side, we choose to start the EVD from the right side as that is the default. Because the ventricles aren't shifted from the midline, the distance (mm) to shift EVD distination right or left will be "0".
 
 If these values are inputted, this output should be produced:
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%201.png" width=35% height=35%>
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%202.png" width=40% height=40%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%201.png" width=35% height=35%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%202.png" width=40% height=40%>
+
+<p align="center">
+Figure 5. 
+	</p>
+
 
 ## Middle Cerebral Artery (MCA) Stroke on Right
 
 <img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%203.png" width=30% height=30%>
+
+<p align="center">
+Figure 6. 
+	</p>
 
 
 **Dicom Folder Path:** the saved path on your computer
@@ -134,14 +158,20 @@ Since there is only one series, we choose a series UID of "None". The index of t
 
 If these values are inputted, this output should be produced:
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%201.png" width=30% height=30%>
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%202.png" width=40% height=40%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/Final%20MCA%20Stroke%20Image%201.png" width=30% height=30%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%202.png" width=40% height=40%>
 
+<p align="center">
+Figure 7. 
+	</p>
 
 
 ## Midline Shift
 
 <img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%203.png" width=30% height=30%>
+
+<p align="center">
+Figure 8. 
+	</p>
 
 
 **Dicom Folder Path:** the saved path on your computer
@@ -168,9 +198,11 @@ Since there is only one series, we choose a series UID of "None". The index of t
 
 If these values are inputted, this output should be produced:
 
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%201.png" width=35% height=35%>
-<img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%202.png" width=35% height=35%>
+<img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%201.png" width=35% height=35%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%202.png" width=35% height=35%>
 
+<p align="center">
+Figure 9. 
+	</p>
 
 
 
