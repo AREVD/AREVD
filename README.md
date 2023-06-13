@@ -1,5 +1,5 @@
 # Automatic Segmentation and Optimal Trajectory Calculation for External Ventricular Drain
-This repository contains research artifacts for the paper “Did I Do Well? Assessment of Trainees' Performance in Augmented Reality-assisted Neurosurgical Training”, submitted to **IEEE ISMAR 2023** for review including instructions of the implementation and example datasets.
+This repository contains research artifacts for the paper “Did I Do Well? Instantaneous Assessment of Trainees' Performance in Augmented Reality-assisted Neurosurgical Training”, submitted to **IEEE ISMAR 2023** for review including instructions of the implementation and example datasets.
 
 # Outline
 1. [Overview](https://github.com/NeuroLens6/NeuroLens/blob/main/README.md#overview)
