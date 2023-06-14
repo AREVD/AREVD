@@ -53,22 +53,23 @@ Figure 2. CT Scan of Normal Ventricular Anatomy
 
 3. Fill out the form using the following parameters:
 
-	(a) **Dicom Folder Path:** This is the location of the CT scans on the computer. Insert the path based on where it has been saved on your computer.
+(a) **Dicom Folder Path:** This is the location of the CT scans on the computer. Insert the path based on where it has been saved on your computer.
 
-	(b) **Series UID to Select:** Some CT scans have multiple series. This is just the ID that indicates what series to choose. If there are not multiple series, just leave it as “None”. Otherwise, select the series corresponding to the correct window to examine the ventricles. 
+(b) **Series UID to Select:** Some CT scans have multiple series. This is just the ID that indicates what series to choose. If there are not multiple series, just leave it as “None”. Otherwise, select the series corresponding to the correct window to examine the ventricles. 
 
-	(c) **Index of Which Largest Region Should be Considered the Ventricle(s):** if the largest dark region (meaning there is fluid present) present is the ventricle, set it to 0. If the ventricle is the second or third largest fluid-filled region present select 1 or 2, respectively. 
+(c) **Index of Which Largest Region Should be Considered the Ventricle(s):** if the largest dark region (meaning there is fluid present) present is the ventricle, set it to 0. If the ventricle is the second or third largest fluid-filled region present select 1 or 2, respectively. 
 
-	(d) **Sensitivity of Ventricle Segmentation:** refers to the upper threshold level that users can set. Some scans have bleeds that are lighter than the ventricles, but darker than the surrounding brain area. If this is the case, set the sensitivity to low. Otherwise, set it to high.
+(d) **Sensitivity of Ventricle Segmentation:** refers to the upper threshold level that users can set. Some scans have bleeds that are lighter than the ventricles, but darker than the surrounding brain area. If this is the case, set the sensitivity to low. Otherwise, set it to high.
 
-	(e) **Degrees to rotate Up (+) and Down (-):** taking a look at the CT scan images, if they are rotated either too much up or down, this parameter can be used to correct the orientation. 
+(e) **Degrees to rotate Up (+) and Down (-):** taking a look at the CT scan images, if they are rotated either too much up or down, this parameter can be used to correct the orientation. 
 
-	(f) **Degrees to rotate Right (+) and Left (-):** taking a look at the CT scan images, if they are rotated either too much to the right or left, this parameter can be used to correct the orientation. 
+(f) **Degrees to rotate Right (+) and Left (-):** taking a look at the CT scan images, if they are rotated either too much to the right or left, this parameter can be used to correct the orientation. 
 
-	(g) **Iterations of Erosions and Dilations:** these are performed to confirm that the ventricles are isolated. Erosions disconnect any non-ventricle regions from the ventricles. You would perform more erosions to get more refined results that have no other non-ventricle regions connecting to the ventricles. Because the ventricles shrink slightly when erosion is performed, we use dilation to get them back to their normal size. We erode and dilate the same number of times. Too much erosion and dilation could be a problem because you can erode important parts of the ventricles. 
+(g) **Iterations of Erosions and Dilations:** these are performed to confirm that the ventricles are isolated. Erosions disconnect any non-ventricle regions from the ventricles. You would perform more erosions to get more refined results that have no other non-ventricle regions connecting to the ventricles. Because the ventricles shrink slightly when erosion is performed, we use dilation to get them back to their normal size. We erode and dilate the same number of times. Too much erosion and dilation could be a problem because you can erode important parts of the ventricles. 
 	
 	
-	(h) **Z-Index of the Nasion:** the nasion is the point on the bridge of the nose that meets the forehead. This can be found by examining the CT scans in the sagittal view and choosing the corresponding value for the Z-index. The scans in this dataset may look squished, but using this method to find the nasion will still work. 
+(h) **Z-Index of the Nasion:** the nasion is the point on the bridge of the nose that meets the forehead. This can be found by examining the CT scans in the sagittal view and choosing the corresponding value for the Z-index. The scans in this dataset may look squished, but using this method to find the nasion will still work. 
+
 
 <p align="center">
 	<img src="https://github.com/AREVD/AREVD/blob/main/Images/Nasion%20Image%201.png" width=40% height=40%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/Nasion%20Image%202.png" width=20% height=20%>
@@ -76,11 +77,11 @@ Figure 2. CT Scan of Normal Ventricular Anatomy
 
 <p align="center">
 Figure 3. Location of Nasion on Normal Ventricular Anatomy
-	</p>
+</p>
 
-	(i) **EVD Side:** this parameter determines if you want the EVD to come in from the right side or the left side. Usually, the EVD will come in from the right, unless there are obstructions of some sort in which the EVD will come in from the left.
+(i) **EVD Side:** this parameter determines if you want the EVD to come in from the right side or the left side. Usually, the EVD will come in from the right, unless there are obstructions of some sort in which the EVD will come in from the left.
 
-	(j) **Distance (mm) to shift EVD destination Right (+) or Left (-):** Sometimes, people’s ventricles are shifted either to the left or the right. In this case, we have a parameter that allows the users to shift the final end point to the left or right by a certain number of millimeters. If the ventricles are shifted too much to the right, we would also have to shift the final EVD end point to the right to make sure the catheter is targetting the correct place in the ventricle.
+(j) **Distance (mm) to shift EVD destination Right (+) or Left (-):** Sometimes, people’s ventricles are shifted either to the left or the right. In this case, we have a parameter that allows the users to shift the final end point to the left or right by a certain number of millimeters. If the ventricles are shifted too much to the right, we would also have to shift the final EVD end point to the right to make sure the catheter is targetting the correct place in the ventricle.
 
 
 # Examples
