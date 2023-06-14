@@ -120,7 +120,7 @@ Since there is only one series, we choose a series UID of "None". The index of t
 If these values are inputted, this output should be produced:
 	
 <p align="center">
-  <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%201.png" width=30% height=30%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%202.png" width=35% height=35%>
+  <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%201.png" width=24% height=24%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%202.png" width=35% height=35%>
 </p>
 
 <p align="center">
@@ -164,7 +164,7 @@ Since there is only one series, we choose a series UID of "None". The index of t
 If these values are inputted, this output should be produced:
 
 <p align="center">
-	<img src="https://github.com/AREVD/AREVD/blob/main/Images/Final%20MCA%20Stroke%20Image%201.png" width=30% height=30> <img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%202.png" width=40% height=40%>
+	<img src="https://github.com/AREVD/AREVD/blob/main/Images/Final%20MCA%20Stroke%20Image%201.png"> <img src="https://github.com/AREVD/AREVD/blob/main/Images/MCA%20Stroke%20Image%202.png" width=40% height=40%>
 </p>
 
 <p align="center">
