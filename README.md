@@ -43,10 +43,10 @@ Running the GUI involves filling in a set of parameters.
 **Important Note: The right and left side refer to a surgeon's view of the EVD procedure.**
 
 <p align="center">
-  <img src="https://github.com/AREVD/AREVD/blob/main/Images/Ventricles%20Image.png" width=40% height=40%>
+  <img src="https://github.com/AREVD/AREVD/blob/main/Images/Ventricles%20Image.png" width=50% height=50%>
 </p>
 <p align="center">
-Figure 2. 
+Figure 2. CT Scan of Normal Ventricular Anatomy
 	</p>
 
 
@@ -75,7 +75,7 @@ Figure 2.
 </p>
 
 <p align="center">
-Figure 3. 
+Figure 3. Location of Nasion on Normal Ventricular Anatomy
 	</p>
 
 	(i) **EVD Side:** this parameter determines if you want the EVD to come in from the right side or the left side. Usually, the EVD will come in from the right, unless there are obstructions of some sort in which the EVD will come in from the left.
@@ -91,7 +91,7 @@ Figure 3.
 </p>
 
 <p align="center">
-Figure 4. 
+Figure 4. CT Scan of Hydrocephalus Ventricles
 	</p>
 
 **Dicom Folder Path:** the saved path on your computer
@@ -124,7 +124,7 @@ If these values are inputted, this output should be produced:
 </p>
 
 <p align="center">
-Figure 5. 
+Figure 5. Automatic Segmentation Results of Hydrocephalus Ventricles
 	</p>
 
 ## Middle Cerebral Artery (MCA) Stroke on Right
@@ -134,7 +134,7 @@ Figure 5.
 </p>
 
 <p align="center">
-Figure 6. 
+Figure 6. CT Scan of Ventricles with MCA Stroke Located on the Right Side
 	</p>
 
 
@@ -168,7 +168,7 @@ If these values are inputted, this output should be produced:
 </p>
 
 <p align="center">
-Figure 7. 
+Figure 7. Automatic Segmentation Results of Ventricles with MCA Stroke Located on the Right Side
 	</p>
 
 
@@ -179,7 +179,7 @@ Figure 7.
 </p>
 
 <p align="center">
-Figure 8. 
+Figure 8. CT Scan of Ventricles with a Midline Shift to the Right
 	</p>
 
 
@@ -212,7 +212,7 @@ If these values are inputted, this output should be produced:
 </p>
 
 <p align="center">
-Figure 9. 
+Figure 9. Automatic Segmentation Results of Midline Shift Ventricular Anatomy
 	</p>
 
 
