@@ -217,7 +217,7 @@ Figure 9. Automatic Segmentation Results of Midline Shift Ventricular Anatomy
 	</p>
 
 
-
+<!---
 # Citation of Dataset
 	@misc{rsna-intracranial-hemorrhage-detection,
           title = {RSNA Intracranial Hemorrhage Detection},
@@ -225,3 +225,4 @@ Figure 9. Automatic Segmentation Results of Midline Shift Ventricular Anatomy
           year = {2019},
           url = {https://kaggle.com/competitions/rsna-intracranial-hemorrhage-detection}
           }
+--->
