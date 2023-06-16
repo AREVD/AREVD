@@ -37,7 +37,7 @@ The data used for this project comes from the **RSNA Intracranial Hemorrhage Det
 
 ## Running the GUI:
 Running the GUI involves filling in a set of parameters.
-1. Download and save the Dicom files of the CT scans to your computer.
+1. Download and save the DICOM files of the CT scans to your computer.
 2. Examine the CT scans on a medical image viewing software such as Mango viewing software. If there are multiple series, choose the series corresponding to the correct window to examine the ventricles. 
 
 **Important Note: The right and left sides refer to a surgeon's view of the EVD procedure.**
@@ -53,7 +53,7 @@ Figure 2. CT Scan of Normal Ventricular Anatomy
 
 3. Fill out the form using the following parameters:
 
-(a) **Dicom Folder Path:** This is the location of the CT scans on the computer. Insert the path based on where it has been saved on your computer.
+(a) **DICOM Folder Path:** This is the location of the CT scans on the computer. Insert the path based on where it has been saved on your computer.
 
 (b) **Series UID to Select:** Some CT scans have multiple series. This is just the ID that indicates what series to choose. If there are not multiple series, just leave it as “None”. Otherwise, select the series corresponding to the correct window to examine the ventricles. 
 
@@ -95,7 +95,7 @@ Figure 3. Location of Nasion on Normal Ventricular Anatomy
 Figure 4. CT Scan of Hydrocephalus Ventricles
 	</p>
 
-**Dicom Folder Path:** the saved path on your computer
+**DICOM Folder Path:** The saved path on your computer
 
 **Series UID to Select:** None
 
@@ -116,7 +116,7 @@ Figure 4. CT Scan of Hydrocephalus Ventricles
 **Distance (mm) to shift EVD destination Right (+) or Left (-):** 0
 
 
-Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "High" because there are no other regions that are lighter than the ventricles, but darker than the surrounding brain. The degrees to rotate up and down would be "8" since in the sagittal view of the CT scan, the skull dips downward. This positive 8 correction allows the scan to be rotated up to fix the orientation. The degrees rotated to the right or left is "0" since the CT scan is in the correct orientation in that direction. The iterations of erosions and dilations are found by trial and error to be "5". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "33". Because there are no obstructions on the right side, we choose to start the EVD from the right side as that is the default. Because the ventricles aren't shifted from the midline, the distance (mm) to shift the EVD destination right or left will be "0".
+Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "High" because there are no other regions that are lighter than the ventricles, but darker than the surrounding brain. The degrees to rotate up and down would be "8" since the skull dips downward in the sagittal view of the CT scan. This positive 8 correction allows the scan to be rotated up to fix the orientation. The degrees rotated to the right or left is "0" since the CT scan is in the correct orientation in that direction. The iterations of erosions and dilations are found by trial and error to be "5". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "33". Because there are no obstructions on the right side, we choose to start the EVD from the right side as that is the default. Because the ventricles aren't shifted from the midline, the distance (mm) to shift the EVD destination right or left will be "0".
 
 If these values are inputted, this output should be produced:
 	
@@ -139,7 +139,7 @@ Figure 6. CT Scan of Ventricles with MCA Stroke Located on the Right Side
 	</p>
 
 
-**Dicom Folder Path:** the saved path on your computer
+**DICOM Folder Path:** The saved path on your computer
 
 **Series UID to Select:** None
 
@@ -159,7 +159,7 @@ Figure 6. CT Scan of Ventricles with MCA Stroke Located on the Right Side
 
 **Distance (mm) to shift EVD destination Right (+) or Left (-):** 0
 
-Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "Low" because there is another region that is lighter than the ventricles, but darker than the surrounding brain. This lower value for sensitivity helps distinguish between the darker ventricle and this lighter bleed. The degrees to rotate up and down would be "40" since in the sagittal view of the CT scan, the skull dips downward. This positive 40 correction allows the scan to be rotated up to fix the orientation. The degrees rotated to the right or left is "0" since the CT scan is in the correct orientation in that direction. The iterations of erosions and dilations are found by trial and error to be "2". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "55". Because is the obstruction of the bleed from the right side, we choose to start the EVD from the left side. Because the ventricles aren't shifted from the midline, the distance (mm) to shift EVD destination right or left will be "0".
+Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "Low" because there is another region that is lighter than the ventricles, but darker than the surrounding brain. This lower value for sensitivity helps distinguish between the darker ventricle and this lighter bleed. The degrees to rotate up and down would be "40" since the skull dips downward in the sagittal view of the CT scan. This positive 40 correction allows the scan to be rotated up to fix the orientation. The degrees rotated to the right or left is "0" since the CT scan is in the correct orientation in that direction. The iterations of erosions and dilations are found by trial and error to be "2". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "55". Because is the obstruction of the bleed from the right side, we choose to start the EVD from the left side. Because the ventricles aren't shifted from the midline, the distance (mm) to shift the EVD destination right or left will be "0".
 
 
 If these values are inputted, this output should be produced:
@@ -184,7 +184,7 @@ Figure 8. CT Scan of Ventricles with a Midline Shift to the Right
 	</p>
 
 
-**Dicom Folder Path:** the saved path on your computer
+**DICOM Folder Path:** The saved path on your computer
 
 **Series UID to Select:** None
 
@@ -204,7 +204,7 @@ Figure 8. CT Scan of Ventricles with a Midline Shift to the Right
 
 **Distance (mm) to shift EVD destination Right (+) or Left (-):** 5
 
-Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "High" because there are no other regions that are lighter than the ventricles, but darker than the surrounding brain. The degrees to rotate up and down would be "25" since in the sagittal view of the CT scan, the skull dips downward. This positive 25 correction allows the scan to be rotated up to fix the orientation. The degrees rotated to the right or left would be "-8" since in the axial view of the CT scan, the skull is oriented towards the right. This negative 8 correction allows the scan to be rotated towards the left to fix the orientation. The iterations of erosions and dilations are found by trial and error to be "2". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "59". Because there are no obstructions on the right side, we choose to start the EVD from the right side as that is the default. Since the ventricles are shifted from the midline towards the right, the distance (mm) to shift the EVD destination right or left will be "5" which is a shift of 5 mm to the right.
+Since there is only one series, we choose a series UID of "None". The index of the largest region to be considered the ventricle would be "0" since the largest, dark continuous region corresponds to the ventricles. The sensitivity is "High" because there are no other regions that are lighter than the ventricles, but darker than the surrounding brain. The degrees to rotate up and down would be "25" since the skull dips downward in the sagittal view of the CT scan. This positive 25 correction allows the scan to be rotated up to fix the orientation. The degrees rotated to the right or left would be "-8" since the skull is oriented towards the right in the axial view of the CT scan. This negative 8 correction allows the scan to be rotated towards the left to fix the orientation. The iterations of erosions and dilations are found by trial and error to be "2". This is the lowest number of iterations that produces a refined result without eroding away too many important features of the ventricles. The Z-index is found using the instructions earlier to be "59". Because there are no obstructions on the right side, we choose to start the EVD from the right side as that is the default. Since the ventricles are shifted from the midline towards the right, the distance (mm) to shift the EVD destination right or left will be "5" which is a shift of 5 mm to the right.
 
 If these values are inputted, this output should be produced:
 
