@@ -26,7 +26,7 @@ In order to make the AR system more clinically feasible, we created an automatic
 
 # Data
 
-The data used for this project comes from the **RSNA Intracranial Hemorrhage Detection** data set on Kaggle (https://kaggle.com/competitions/rsna-intracranial-hemorrhage-detection). This data set includes many CT scans of brains, most of which have experienced an intercranial hemorrhage or bleeding in the brain.
+The data used for this project comes from the **RSNA Intracranial Hemorrhage Detection** data set on Kaggle (https://kaggle.com/competitions/rsna-intracranial-hemorrhage-detection). This data set includes many computed tomography (CT) scans of brains, most of which have experienced an intercranial hemorrhage or bleeding in the brain.
 
 # Implementation
 
