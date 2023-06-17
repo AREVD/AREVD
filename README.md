@@ -169,6 +169,10 @@ If these values are inputted, this output should be produced:
 </p>
 
 <p align="center">
+![](https://github.com/AREVD/AREVD/blob/main/GIFs/Hydrocephalus.gif)
+</p>
+
+<p align="center">
 Figure 7. Automatic Segmentation Results of Ventricles with MCA Stroke Located on the Right Side
 	</p>
 
