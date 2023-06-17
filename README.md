@@ -164,8 +164,9 @@ Since there is only one series, we choose a series UID of "None". The index of t
 
 If these values are inputted, this output should be produced:
 
-_______
-
+<p align="center">
+	<img src="https://github.com/AREVD/AREVD/blob/main/GIFs/MCA%20Stroke.gif" width=60% height=60%> 
+</p>
 
 <p align="center">
 Figure 7. Automatic Segmentation Results of Ventricles with MCA Stroke Located on the Right Side
