@@ -209,7 +209,7 @@ Since there is only one series, we choose a series UID of "None". The index of t
 If these values are inputted, this output should be produced:
 
 <p align="center">
-	<img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%201.png" width=25% height=25%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/Midline%20Shift%20Image%202.png" width=35% height=35%>
+	<img src="https://github.com/AREVD/AREVD/blob/main/GIFs/Midline%20Shift.gif" width=60% height=60%> 
 </p>
 
 <p align="center">
@@ -217,12 +217,3 @@ Figure 9. Automatic Segmentation Results of Midline Shift Ventricular Anatomy
 	</p>
 
 
-<!---
-# Citation of Dataset
-	@misc{rsna-intracranial-hemorrhage-detection,
-          title = {RSNA Intracranial Hemorrhage Detection},
-          publisher = {Kaggle},
-          year = {2019},
-          url = {https://kaggle.com/competitions/rsna-intracranial-hemorrhage-detection}
-          }
---->
