@@ -121,7 +121,7 @@ Since there is only one series, we choose a series UID of "None". The index of t
 If these values are inputted, this output should be produced:
 	
 <p align="center">
-  <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%201.png" width=24% height=24%> <img src="https://github.com/AREVD/AREVD/blob/main/Images/Hydrocephalus%20Image%202.png" width=35% height=35%>
+	<img src="https://github.com/AREVD/AREVD/blob/main/GIFs/Hydrocephalus.gif" width=60% height=60%> 
 </p>
 
 <p align="center">
@@ -164,9 +164,7 @@ Since there is only one series, we choose a series UID of "None". The index of t
 
 If these values are inputted, this output should be produced:
 
-<p align="center">
-	<img src="https://github.com/AREVD/AREVD/blob/main/GIFs/Hydrocephalus.gif" width=70% height=70%> 
-</p>
+_______
 
 
 <p align="center">
