@@ -222,10 +222,10 @@ The associated demo, _"Did You Do Well? Real-Time Personalized Feedback on Cathe
 ### Citation
 Please cite the following paper in your publications if this code helps your research.
 ```
-@inproceedings{eom2022ar,
+@inproceedings{Eom24ARNeuro,
   title={Did I Do Well? Personalized Assessment of Trainees' Performance in Augmented Reality-assisted Neurosurgical Training},
   author={Eom, Sangjun and Ma, Tiffany and Hu, Tianyi and Vutakuri, Neha and Jackson, Joshua and Gorlatova, Maria},
-  booktitle={2024 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)},
+  booktitle={Proc. IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)},
   year={2024},
   organization={IEEE}
 }
