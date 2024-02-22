@@ -1,5 +1,5 @@
 # Automatic Segmentation and Optimal Trajectory Calculation for External Ventricular Drain
-This repository contains research artifacts for the paper “Did I Do Well? Instantaneous Assessment of Trainees' Performance in Augmented Reality-assisted Neurosurgical Training”, submitted to **IEEE VR 2024** for review including instructions of the implementation and example datasets.
+This repository contains research artifacts for the paper _“Did I Do Well? Instantaneous Assessment of Trainees' Performance in Augmented Reality-assisted Neurosurgical Training”_, submitted to **the 5th Annual Workshop on 3D Content Creation for Simulated Training in eXtended Reality, co-located with IEEE VR, 2024** by [Sarah Eom](https://sites.duke.edu/sangjuneom/), [Tiffany Ma](https://sites.duke.edu/tiffanyma/), [Tianyi Hu](http://hutianyi.tech/), Neha Vutakuri, Joshua Jackson, and [Maria Gorlatova](https://maria.gorlatova.com/). The repository includes instructions for the implementation of threshold-based automatic segmentation for external ventricular drain and example datasets.
 
 # Outline
 1. [Overview](https://github.com/AREVD/AREVD/blob/main/README.md#overview)
@@ -215,5 +215,23 @@ If these values are inputted, this output should be produced:
 <p align="center">
 Figure 9. Automatic Segmentation Results of Midline Shift Ventricular Anatomy
 	</p>
+
+### Associated Demo
+The associated demo, _"Did You Do Well? Real-Time Personalized Feedback on Catheter Placement in Augmented Reality-assisted Neurosurgical Training"_, presents an AR-assisted neurosurgical training tool that provides real-time personalized feedback based on trainees' manipulation of the surgical environment and eye gaze patterns. The video of this demo can be found on [YouTube](https://youtu.be/AKNKKrCvapI). 
+
+### Citation
+Please cite the following paper in your publications if this code helps your research.
+```
+@inproceedings{eom2022ar,
+  title={Did I Do Well? Personalized Assessment of Trainees' Performance in Augmented Reality-assisted Neurosurgical Training},
+  author={Eom, Sangjun and Ma, Tiffany and Hu, Tianyi and Vutakuri, Neha and Jackson, Joshua and Gorlatova, Maria},
+  booktitle={2024 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)},
+  year={2024},
+  organization={IEEE}
+}
+```
+### Acknowledgments
+The contributors of the code are [Tiffany Ma](https://sites.duke.edu/tiffanyma/), [Sarah Eom](https://sites.duke.edu/sangjuneom/), and [Maria Gorlatova](https://maria.gorlatova.com/). For questions on this repository or the related paper, please contact Sangjun (Sarah) Eom at sangjun.eom [AT] duke [DOT] edu.
+This work was supported in part by NSF grants CNS-2112562 and CNS-1908051, NSF CAREER Award IIS-2046072, and by a Thomas Lord Educational Innovation Grant.
 
 
