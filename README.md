@@ -232,6 +232,7 @@ Please cite the following paper in your publications if this code helps your res
 ```
 ### Acknowledgments
 The contributors of the code are Neha Vutakuri, [Tiffany Ma](https://sites.duke.edu/tiffanyma/), [Sarah Eom](https://sites.duke.edu/sangjuneom/), and [Maria Gorlatova](https://maria.gorlatova.com/). For questions on this repository or the related paper, please contact Sangjun (Sarah) Eom at sangjun.eom [AT] duke [DOT] edu.
-This work was supported in part by NSF grants CNS-2112562 and CNS-1908051, NSF CAREER Award IIS-2046072, and by a Thomas Lord Educational Innovation Grant.
+
+This work was supported in part by NSF grants CNS-2112562 and CNS-1908051, NSF CAREER Award IIS-2046072, a Thomas Lord Educational Innovation Grant, and Defense Advanced Research Projects Agency Young Faculty Award HR0011-24-1-0001. This paper has been approved for public release; distribution is unlimited. The contents of the paper do not necessarily reflect the position or the policy of the Defense Advanced Research Projects Agency. No official endorsement should be inferred.
 
 
