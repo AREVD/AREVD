@@ -234,12 +234,3 @@ Please cite the following paper in your publications if this code helps your res
 The contributors of the code are Neha Vutakuri, [Tiffany Ma](https://sites.duke.edu/tiffanyma/), [Sarah Eom](https://sites.duke.edu/sangjuneom/), and [Maria Gorlatova](https://maria.gorlatova.com/). For questions on this repository or the related paper, please contact Sangjun (Sarah) Eom at sangjun.eom [AT] duke [DOT] edu.
 
 This work was supported in part by NSF grants CNS-2112562 and CNS-1908051, NSF CAREER Award IIS-2046072, and by a Thomas Lord Educational Innovation Grant.
-
-# License
-
-State the license under which your project is available. Common choices include MIT, GPL, or Apache 2.0.
-Acknowledgments
-
-    Mention any individuals or organizations that contributed to the project.
-    Any third-party assets or code used in the project.
-    Any other acknowledgments.
